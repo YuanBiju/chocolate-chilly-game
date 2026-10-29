@@ -15,7 +15,7 @@ int main(){
         printf("Player %d choose number of chocolate(s): ",player_number);
         scanf("%d",&chocolate_taken);
 
-        if((chocolate_taken < 1) && (chocolate_taken > MAX_CHOCOLATE_COUNT)){
+        if((chocolate_taken < 1) || (chocolate_taken > MAX_CHOCOLATE_COUNT)){
             printf("Wrong choice! Choose between 1 and 3 chocolates.\n");
             continue;
         }
